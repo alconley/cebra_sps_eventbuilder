@@ -195,7 +195,7 @@ impl EVBApp {
         };
     }
 
-    fn channel_map_ui(&mut self, ui: &mut egui::Ui) {
+    pub fn channel_map_ui(&mut self, ui: &mut egui::Ui) {
         ui.label(
             RichText::new("Channel Map")
                 .color(Color32::LIGHT_BLUE)
@@ -347,7 +347,7 @@ impl EVBApp {
         });
     }
 
-    fn shift_map_ui(&mut self, ui: &mut egui::Ui) {
+    pub fn shift_map_ui(&mut self, ui: &mut egui::Ui) {
         ui.label(
             RichText::new("Time Shift Map")
                 .color(Color32::LIGHT_BLUE)
@@ -600,7 +600,7 @@ impl EVBApp {
         }
     }
 
-    fn ui(&mut self, ui: &mut egui::Ui) {
+    pub fn ui(&mut self, ui: &mut egui::Ui) {
         ui.menu_button("File", |ui| {
             if ui.button("Open Config...").clicked() {
                 let result = rfd::FileDialog::new()
