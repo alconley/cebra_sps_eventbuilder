@@ -430,7 +430,7 @@ impl EVBApp {
         // });
     }
 
-    fn kinematics_ui(&mut self, ui: &mut egui::Ui) {
+    pub fn kinematics_ui(&mut self, ui: &mut egui::Ui) {
         ui.label(
             RichText::new("Kinematics")
                 .color(Color32::LIGHT_BLUE)
