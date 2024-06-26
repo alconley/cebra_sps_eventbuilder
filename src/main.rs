@@ -29,17 +29,8 @@ impl egui_tiles::Behavior<Pane> for TreeBehavior {
                 self.cebra_sps_evb.ui(ui);
             }
         }
-
-        // if ui
-        //     .add(egui::Button::new("Drag me!").sense(egui::Sense::drag()))
-        //     .drag_started()
-        // {
-        //     egui_tiles::UiResponse::DragStarted
-        // } else {
-            egui_tiles::UiResponse::None
-        // }
-
-
+        
+        egui_tiles::UiResponse::None
     }
 }
 
